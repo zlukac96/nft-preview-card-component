@@ -1,0 +1,132 @@
+:root {
+	/*Primary*/
+	--SoftBlue: hsl(215, 51%, 70%);
+	--CyanColor: hsl(178, 100%, 50%);
+	--CyanColorTransparent: hsla(178, 100%, 50%, 0.5);
+
+	/*Neutral*/
+
+	--VeryDarkBlueMainBG: hsl(217, 54%, 11%);
+	--VeryDarkBlueCardBG: hsl(216, 50%, 16%);
+	--VeryDarkBlueLine: hsl(215, 32%, 27%);
+	--WhiteColor: hsl(0, 0%, 100%);
+}
+
+
+body{
+	background-color: var(--VeryDarkBlueMainBG);
+	background-image: url("images/pattern-background-desktop.svg");
+	font-family: 'Outfit', sans-serif;
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+
+.card-container{
+	width: 300px;
+	margin: auto;
+	padding: 24px;
+	background-color: var(--VeryDarkBlueCardBG);
+	/*text-align: center;*/
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.card-container > h1{
+
+}
+
+.card-title{
+	color: var(--WhiteColor);
+	text-decoration: none;
+}
+
+.card-title:hover{
+	color: var(--CyanColor);
+}
+
+.card-container p{
+	color: var(--SoftBlue);
+}
+
+.card-container hr{
+	color: var(--SoftBlue);
+}
+
+.card-image-container{
+	position: relative;
+}
+
+.card-image-container > img{
+	width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+	border-radius: 15px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.card-image-container > a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: var(--CyanColorTransparent);
+	border-radius: 15px;
+	opacity: 0;
+}
+
+.card-image-container > a:hover{
+	opacity: 1;
+}
+
+.price-time-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price-time-container > div{
+	display: flex;
+}
+
+.price-time-container img{
+	width: auto;
+	height: 20px;
+	margin: 0 0 0 0;
+}
+
+.price-time-container p{
+	margin: 0 0 0 5px;
+}
+
+p.price-ETH{
+	color: var(--CyanColor);
+}
+
+.author-container{
+	display: flex;
+	align-items: center;
+}
+.author-container > img{
+	width: 30px;
+	height: 30px;
+	border: 2px solid var(--WhiteColor);
+	border-radius: 100%;
+}
+.author-container > p{
+	margin: 0 0 0 15px;
+}
+
+.author-container a{
+	color: var(--WhiteColor);
+	text-decoration: none;
+}
+
+.author-container a:hover{
+	color: var(--CyanColor);
+}
+
